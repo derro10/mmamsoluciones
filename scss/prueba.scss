@@ -1,50 +1,34 @@
-$primary: #000000;
-$secondary: #A5A5A5;
+$primary: #630256;
+$secondary: #ffffff;
 $highest-font-size: 5rem;
 
-.logo {
+.logo	{
 	display: block;
 	margin: auto;
 	animation-duration: 3s;
 	animation-name: aparecer;
 }
 
-.menu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	background-color: $primary;
-	padding-top: 5px;
+.nav {
+	padding: 10px;
+	text-align: start;
+	color: $secondary;
+	justify-content: right;
 }
 
 .navbar-center {
     margin-right: auto;
     margin-left: auto;
     font-size: 25px;
-  }
-
-.servicios {
-	display: flex;
-	justify-content: space-between;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
 }
 
 .iconosservicios {
 	display: flex;
 	font-size: 20px;
-	box-sizing: border-box;
-	padding: 0;
-	width: 300px;
-	display: inline-block;
-	text-align: center;
-	margin: 10px;
-
-		&:hover img {
-	transform: scale(1.1);
-	}
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
 }
 
 .container {
@@ -60,7 +44,7 @@ $highest-font-size: 5rem;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: 300px;
 	padding: 60px;
-	grid-gap: 3px;
+	grid-gap: 5px;
 }
 
 .productos {
@@ -89,10 +73,45 @@ $highest-font-size: 5rem;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	background-color: $primary;
+	color: $secondary;
+}
 
-		&:hover img {
+.footer img:hover {
 	transform: scale(1.1);
-	}	
+}
+
+.contacto img {
+	display: block;
+	margin: auto;
+}
+
+.contacto img:hover {
+	transform: scale(1.1);
+}
+
+.whatsapp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+}
+.whatsapp:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
 }
 
 @for $i from 1 through 5 {
@@ -110,10 +129,35 @@ $highest-font-size: 5rem;
 	}
 }
 
+@media (min-width: 320px) and (max-width: 900px) {
+	.iconosservicios {
+		flex-direction: column;
+	}
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
 	.logo {
-		width: 50vw;
-		height: 20vh;
+		width: 30vw;
+		height: 15vh;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.productos {
+		display: flex;
+		flex-direction: column;
+		border: 1px #145468 dotted;
+		box-sizing: border-box;
+		text-align: center;
+		align-items: center;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.containerobras {
+		display: flex;
+		flex-direction: column;
+		height: 25%;
 	}
 }
 
@@ -122,7 +166,7 @@ $highest-font-size: 5rem;
 		font-size: 12px;
 	}
 	.footer img {
-		height: 5vh;
-		width: 7vw;
+		height: 30px;
+		width: 30px;
 	}
 }
