@@ -63,57 +63,52 @@
 		<i class="fa fa-whatsapp my-float"></i></a>
 	</section>
 	<section class="container">
-		<caption>
-			<div class="productos">
-				<h3>MESA RATONA ANA</h3>
-				<img src="assets/livingmesaratona.jpg" alt="livingmesaratona" width="300" height="300">
-				<h4>Medidas: 100cm x 80cm</h4>
-				<h4>Material: Roble</h4>
-				<h4>Precio: $7.999</h4>
-				<button type="button" class="btn btn-success">AÑADIR AL CARRO</button>
-			</div>
-			<div class="productos">
-				<h3>MUEBLE TV DECO</h3>
-				<img src="assets/livingmuebletv.jpg" alt="livingmuebletv" width="300" height="300">
-				<h4>Medidas: 2 mts x 4 mts</h4>
-				<h4>Material: Melanina</h4>
-				<h4>Precio: $14.999</h4>
-				<button type="button" class="btn btn-success">AÑADIR AL CARRO</button>
-			</div>
-			<div class="productos">
-				<h3>ESTANTERIA HIERRO</h3>
-				<img src="assets/livingestanteria.jpg" alt="livingestanteria" width="300" height="300">
-				<h4>Medidas: 180 cm x 90 cm</h4>
-				<h4>Material: Hierro con Sauce</h4>
-				<h4>Precio: $8.449</h4>
-				<button type="button" class="btn btn-success">AÑADIR AL CARRO</button>
-			</div>
-			<div class="productos">
-				<h3>SILLA TOLIX</h3>
-				<img src="assets/livingsillamadera.jpg" alt="livingsillamadera" width="300" height="300">
-				<h4>Medidas: 90 cm x 45 cm</h4>
-				<h4>Material: Olmo</h4>
-				<h4>Precio: $2.999</h4>
-				<button type="button" class="btn btn-success">AÑADIR AL CARRO</button>
-			</div>	
-			<div class="productos">
-				<h3>MESA ESTILO INGLES</h3>
-				<img src="assets/livingmesacomedor.jpg" alt="livingmesacomedor" width="300" height="300">
-				<h4>Medidas: 200 cm x 100 cm</h4>
-				<h4>Material: Caoba</h4>
-				<h4>Precio: $19.999</h4>
-				<button type="button" class="btn btn-success">AÑADIR AL CARRO</button>
-			</div>	
-			<div class="productos">
-				<h3>BIBLIOTECA NORDICA</h3>
-				<img src="assets/livingbiblioteca.jpg" alt="livingbiblioteca" width="300" height="300">
-				<h4>Medidas: 150 cm x 90 cm</h4>
-				<h4>Material: Melanina</h4>
-				<h4>Precio: $5.499</h4>
-				<button type="button" class="btn btn-success">AÑADIR AL CARRO</button>
-			</div>								
-		</caption>
-		</table>
+		<div id = "productos"></div>			
+		<section class="containerbutton">
+			<button type="button" class="btn btn-success" id="show">PERSONALIZA TU MUEBLE</button> <br> <br>
+				<div id="PersMueble" style="display:none">
+					<form action="#" name=form1 id="PersMueble" class="display:none">
+						<div id="contenido" class="hideable">
+							<label for="exampleFormControlSelect1" class="formtitulo">Producto</label>
+							<select class="form-control" id="mueble">
+								<option>Biblioteca</option>
+								<option>Estanteria</option>
+								<option>Mesa Pop</option>
+								<option>Mesa Ratona</option>
+								<option>Mueble para TV</option>
+								<option>Organizador</option> <br>
+							</select>
+						<div class="form-group"></div>
+							<label for="exampleFormControlSelect1" class="formtitulo">Altura</label>
+							<select class="form-control" id="altura">
+								<option>180 cm</option>
+								<option>160 cm</option>
+								<option>140 cm</option>
+								<option>120 cm</option>
+							</select>					
+							<div class="form-group"></div>
+							<label for="exampleFormControlSelect1" class="formtitulo">Largo</label>
+							<select class="form-control" id="largo">
+								<option>120 cm</option>
+								<option>100 cm</option>
+								<option>80 cm</option>
+								<option>60 cm</option>
+							</select>			
+							<div class="form-group"></div>
+							<label for="exampleFormControlSelect1" class="formtitulo">Material</label>
+							<select class="form-control" id="material">
+								<option>Melanina</option>
+								<option>Pino</option>
+								<option>Roble</option>
+							</select> <br> <br>
+							<button type="button" class="btn btn-danger" id="hide">OCULTAR</button> <br> <br> <br>
+							<button type="button" class="btn btn-success" id="btncalcularValor">CALCULAR VALOR</button> <br> <br>
+								<div id="calcularValor">
+									<h3 class="calcularValor" id="h3calcularValor"></h3>
+								</div>
+						</div> <br>
+					</form>
+				</div>
 	</section>
 	</main> <br>
 	<footer class="footer"> Soluciones para lo que soñas - Copyright © 2020 | MMAM Soluciones &nbsp &nbsp        
@@ -121,6 +116,9 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/mueblesliving.js"></script>
 </body>
 </html>
 

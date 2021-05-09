@@ -5,6 +5,23 @@
 	animation-name: aparecer;
 }
 
+.form {
+	border: 1px blue dashed;
+	display: inline-block;
+	width: 50px;
+	padding: 10px 10px 10px 10px;
+}
+
+.formtitulo {
+	font-size: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-control {
+	font-size: 25px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
 .nav {
 	padding: 10px;
 	text-align: start;
@@ -44,6 +61,12 @@
 	grid-gap: 5px;
 }
 
+.containerbutton{
+	margin: center;
+	padding-top: 2rem;
+	text-align: center;
+}
+
 .productos {
 	display: flex;
 	border: 1px #145468 dotted;
@@ -53,6 +76,18 @@
 	text-align: center;
 	flex-wrap: wrap;
 	margin: 10px;
+}
+
+.calcularValor {
+	display: flex;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+	flex-wrap: wrap;
+	margin: 10px;
+	color: #5c1753;	font-size: 30px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
 }
 
 .obras img {
@@ -105,6 +140,25 @@
 	text-decoration: none;
 	color: #25d366;
 	background-color:#fff;
+}
+
+
+.ptitulo {
+	font-size: 20px;
+	padding-top: 1rem;
+	text-decoration: line-through;
+	font-weight: bold;
+	color: red;
+}
+
+.ptexto {
+	font-size: 25px;
+	color: rgb(40, 187, 40);
+	font-weight: bold;
+}
+
+.h3 {
+	font-size: 40px;
 }
 
 .my-float{
