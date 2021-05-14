@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Estanteria Deco",
+        "imagen": "assets/cocinaestanteria.jpg",
+        "Antes": "Antes: $9500",
+        "Ahora": "Ahora desde: $7999",
+        "id": 1
+    },
+    {
+        "nombre": "Mesa Paraiso",
+        "imagen": "assets/cocinamesa.jpg",
+        "Antes": "Antes: $9000",
+        "Ahora": "Ahora desde: $7499",
+        "id": 2
+    },
+    {
+        "nombre": "Alacena Nordica",
+        "imagen": "assets/cocinaalacena.jpg",
+        "Antes": "Antes: $10000",
+        "Ahora": "Ahora desde: $6999",
+        "id": 3
+    },
+    {
+        "nombre": "Esquinero Pop",
+        "imagen": "assets/cocinaesquinero.jpg",
+        "Antes": "Antes: $10000",
+        "Ahora": "Ahora desde: $6999",
+        "id": 4
+    },
+    {
+        "nombre": "Bajo Mesada",
+        "imagen": "assets/cocinabajomesada.jpg",
+        "Antes": "Antes: $7000",
+        "Ahora": "Ahora desde: $3999",
+        "id": 5
+    },
+    {
+        "nombre": "Organizador",
+        "imagen": "assets/cocinaorganizador.jpg",
+        "Antes": "Antes: $7500",
+        "Ahora": "Ahora desde: $5999",
+        "id": 6
+    }
+]

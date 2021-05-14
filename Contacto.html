@@ -63,7 +63,7 @@
 		<i class="fa fa-whatsapp my-float"></i></a>
 	</section>
 	<section>
-		<form class="container">
+		<form class="container" id="formulario" method="post">
 			<div class="form-group">
 				<label for="exampleFormControlInput1">Nombre y Apellido</label>
 				<input type="text" class="form-control" id="Nombrecompleto">
@@ -86,11 +86,12 @@
 				<textarea class="form-control" id="escibinos" rows="5" placeholder="¿En que podemos ayudarte?"></textarea>
 			</div> <br>
 			<button type="reset">Limpiar</button>
-			<button type="submit">Enviar</button>
+			<button type="submit" id="btnEnviar">Enviar</button>
 			<div> <br>
 				<label>¿Desea recibir Newsletter?</label>
 				<input type="checkbox" name="acepta" value="1">
 			</div>
+			<div id="resp"></div>
 		</form>
 	</section>
 	</main> <br>
@@ -101,6 +102,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/contacto.js"></script>
+	<script src="js/usuarios.js"></script>
 </body>
 </html>
