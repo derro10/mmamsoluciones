@@ -13,7 +13,6 @@ $(function () {
 		.done((data, textStatus, jqXHR) => {
 			console.log(data);
 
-			
 		})
 		.fail( (jqXHR, textStatus, errorThrown) => {
 		})
