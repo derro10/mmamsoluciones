@@ -7,18 +7,17 @@ class Mueble {
 	}
 }
 
-
 $(function () {
     $.ajax('../productosliving.json')
-		.done((data, textStatus, jqXHR) => {
-			console.log(data);
-
-		})
-		.fail( (jqXHR, textStatus, errorThrown) => {
-		})
+        .done((data, textStatus, jqXHR) => {
+            console.log(data);
+        })
+        .fail( (jqXHR, textStatus, errorThrown) => {
+            console.log(errorThrown);
+        })
 });
 
-/*
+
 const Productos = [];
 
 Productos.push(new Mueble ("Biblioteca Deco", "assets/livingbiblioteca.jpg", "Antes: $9500" ,"Ahora desde: $7999"));
@@ -26,7 +25,8 @@ Productos.push(new Mueble ("Estanteria", "assets/livingestanteria.jpg", "Antes: 
 Productos.push(new Mueble ("Mesa Pop", "assets/livingmesacomedor.jpg", "Antes: $10000" ,"Ahora desde: $6999"));
 Productos.push(new Mueble ("Mesa Ratona","assets/livingmesaratona.jpg", "Antes: $8000" ,"Ahora desde: $4699"));
 Productos.push(new Mueble ("Mueble para TV", "assets/livingmuebletv.jpg", "Antes: $7000" ,"Ahora desde: $3999"));
-Productos.push(new Mueble ("Organizador", "assets/cocinaorganizador.jpg", "Antes: $7500" ,"Ahora desde: $5999"));*/
+Productos.push(new Mueble ("Organizador", "assets/cocinaorganizador.jpg", "Antes: $7500" ,"Ahora desde: $5999"));
+
 
 Productos.forEach(element => {
 
@@ -58,6 +58,7 @@ Productos.forEach(element => {
 	imprimir.appendChild(contenedor)
 
 });
+
 
 function elegirMueble (){
     let mueble = document.querySelector("#mueble").value;
@@ -153,4 +154,3 @@ function imprimir () {
     h3.innerText= "Tu mueble personalizado costaría: $ " + importeTotal
 
 }	
-
